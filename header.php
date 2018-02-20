@@ -133,7 +133,8 @@ changeTitle();
             <?php
           }else if(!isset($nick)) {
             ?>
-              <a class="btn btn-outline-success" href="login.php">Zaloguj</a>
+              <!-- <a class="btn btn-outline-success" href="login.php">Zaloguj</a> -->
+              <a style="font-size: 18px; text-decoration: none; color: black" href="login.php"><span class="oi oi-account-login" style="margin-right: 10px;"></span>Zaloguj</a>
               <?php
           }
       ?>

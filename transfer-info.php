@@ -10,7 +10,7 @@ if(isset($_REQUEST['id'])){
 }
 
 
-$ciasteczko = 'glosowanie'.$id_transferu; // Ustawiamy nazwe ciasteczka aby można było oddać głos raz na 24h.
+$ciasteczko = 'glosowanie'.$id_transferu; // Ustawiamy nazwe ciasteczka
 
 ?>
 <input type="hidden" name="tak" class="ukryty-tak">

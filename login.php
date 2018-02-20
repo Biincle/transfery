@@ -60,7 +60,7 @@ if(isset($_POST['register'])){
           else{
             if($user->register($nick,$email,$password)){
               //$user->redirect('login.php?joined');
-              $user->redirect('reg.php?name='.$nick);
+              $user->redirect('reg.php?name='.$nick.'&mail='.$email);
             }
           }
 
