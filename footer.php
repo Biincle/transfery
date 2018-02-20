@@ -32,7 +32,7 @@
     <!--Copyright-->
     <div class="footer-copyright">
         <div class="container-fluid">
-            © 2018 Copyright: <a href="#"> Paweł Ciarka & Mateusz Pylak </a>
+            © <?php echo date("Y"); ?> Copyright: <a href="#"> Paweł Ciarka & Mateusz Pylak </a>
 
         </div>
     </div>
