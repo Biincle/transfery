@@ -18,6 +18,9 @@ justify-content: center;
 .flex-grow {
    flex: 1;
 }
+.navbar{
+  height: 55px!important;
+}
 
 .card-left{
   width: 20%;
