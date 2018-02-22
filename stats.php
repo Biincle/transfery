@@ -4,55 +4,50 @@
 ?>
 
 
-
-  <div class="row center">
-    <div class="col-md-3 admin-kafelek">
-      <h2>Ilość użytkowników: </h2>
-        <?php
-        $zapytanie = $DB_con->query("SELECT * FROM uzytkownicy");
-        $zapytanie->execute();
-        $count = $zapytanie->rowCount();
-        echo '<h2 style="font-weight:bold">'.$count.'</h2>';
-        ?>
-        <a href="?user" style="color:white;">Zarządzaj użytkownikami</a>
-    </div>
-    <div class="col-md-3 mr kafelek">
-      <h2>Ilość piłkarzy w bazie: </h2>
-      <?php
-        $zapytanie = $DB_con->query("SELECT * FROM pilkarz");
-        $zapytanie->execute();
-        $count = $zapytanie->rowCount();
-        echo '<h2 style="font-weight:bold">'.$count.'</h2>';
-      ?>
-    </div>
-    <div class="col-md-3">
-      <h2>Aktywnych transferów: </h2>
-      <?php
-      $zapytanie = $DB_con->query("SELECT * FROM transfer");
-      $zapytanie->execute();
-      $count = $zapytanie->rowCount();
-      echo '<h2 style="font-weight:bold">'.$count.'</h2>';
-      ?>
-    </div>
   </div>
-
+  <table class="table" style="margin-top:20px;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nick</th>
+        <th scope="col">E-Mail</th>
+        <th scope="col">Uprawnienia</th>
+        <th scope="col">Działanie</th>
+      </tr>
+    </thead>
+    <tbody>
   <div class="row">
     <?php
-      if(isset($_REQUEST['user'])){
-      $test =  $_REQUEST['user'];
+
 
       $zapytanie = $DB_con->query("SELECT * FROM uzytkownicy");
       $zapytanie->execute();
 
       foreach ($zapytanie as $wiersz) {
-        echo $wiersz['nick'];
+
+        ?>
+
+            <tr>
+              <th scope="row"><?php echo $wiersz['id'];?></th>
+              <td><?php echo $wiersz['nick'];?></td>
+              <td><?php echo $wiersz['email'];?></td>
+              <td><?php echo $wiersz['uprawnienia'];?></td>
+              <td><a href="#">Zmień</a></td>
+            </tr>
+
+
+      <?php
       }
-    }
+
+?>
+
+</tbody>
+</table>
 
 
 
 
-    ?>
+
   </div>
   <style media="screen">
     div.admin-kafelek{
@@ -79,6 +74,4 @@
   }
     }
   </style>
-<?php
-
-?>
+<?php include("footer.php");?>
