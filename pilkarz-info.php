@@ -20,7 +20,7 @@ if(isset($_REQUEST['id'])){
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Edytuj</button>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="#">Edytuj</a>
-        <a class="dropdown-item" href="#">Usuń</a>
+        <a class="dropdown-item" href="usun.php?id=<?php echo $id?>&type=pilkarz">Usuń</a>
       </div>
     </div>
   </div>

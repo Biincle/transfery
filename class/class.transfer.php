@@ -222,6 +222,27 @@ class transfer {
     }
 
 
+    public function usunPilkarz($id){
+      try {
+        $q = $this->db->prepare("DELETE FROM pilkarz WHERE id=:id");
+        $q->execute(array(':id'=> $id));
+      } catch (Exception $e) {
+        echo $e->getMessage();
+      }
+
+    }
+
+    public function usunKlub($id){
+      try {
+        $q = $this->db->prepare("DELETE FROM klub WHERE id=:id");
+        $q->execute(array(':id'=> $id));
+      } catch (Exception $e) {
+        $e->getMessage();
+      }
+
+    }
+
+
 
 
 

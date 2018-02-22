@@ -9,6 +9,30 @@ if(isset($_REQUEST['id'])){
 <script type="text/javascript">
   document.title = '<?php echo $transfer->clubManager($id, 'nazwa')?> | transferypilkarskie.pl';
 </script>
+
+<?php
+  if(isset($uprawnienia) && $uprawnienia == 'admin')
+  {
+
+?>
+  <div class="row">
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Edytuj</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Edytuj</a>
+        <a class="dropdown-item" href="usun.php?id=<?php echo $id?>&type=klub">Usuń</a>
+      </div>
+    </div>
+  </div>
+<?php
+}
+?>
+
+
+
+
+
+
   <div class="card" style="margin-top: 20px;">
 
     <div class="card-body">

@@ -102,7 +102,7 @@ function pobierz(){
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opcje transferu</button>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="edit.php?id=<?php echo $id_transferu?>">Edytuj</a>
-        <a class="dropdown-item" href="usun.php?id=<?php echo $id_transferu?>">Usuń</a>
+        <a class="dropdown-item" href="usun.php?id=<?php echo $id_transferu?>&type=transfer">Usuń</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item disabled" href="#">Potwierdz</a>
       </div>
