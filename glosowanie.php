@@ -14,8 +14,8 @@ if($_POST['value'] == "tak"){
 
     $query->execute();
 
-    $wygasa = 24*3600; // 1 day
-	  setcookie('glosowanie'.$_POST['id'], 'voted', time() + $wygasa, '/'); // Place a cookie
+    $wygasa = 24*3600; // 1 dzień
+	  setcookie('glosowanie'.$_POST['id'], 'voted', time() + $wygasa, '/'); // nadajemy ciasteczko aby nie mozna bylo zaglosowac drugi raz.
   } catch (\Exception $e) {
     echo $e->getMessage();
   }
@@ -27,8 +27,8 @@ if($_POST['value'] == "tak"){
 
     $query->execute();
 
-    $wygasa = 24*3600; // 1 day
-	  setcookie('glosowanie'.$_POST['id'], 'voted', time() + $wygasa, '/'); //Ustawiamy ciastek
+    $wygasa = 24*3600; // 1 dzień
+	  setcookie('glosowanie'.$_POST['id'], 'voted', time() + $wygasa, '/'); // nadajemy ciasteczko aby nie mozna bylo zaglosowac drugi raz.
   } catch (\Exception $e) {
     echo $e->getMessage();
   }

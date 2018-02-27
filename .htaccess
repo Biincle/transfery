@@ -2,4 +2,6 @@ Options FollowSymLinks
 RewriteEngine On
 RewriteRule ^index.html$ index.php [L]
 RewriteRule ^login.html$ login.php [L]
+RewriteRule ^glowna$ index.php [L]
+RewriteRule ^pilkarze$ baza-pilkarz.php [L]
 RewriteRule ^ustawienia.html$ ustawienia.php [L]
