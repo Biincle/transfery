@@ -33,7 +33,7 @@ include("header.php");
     //   echo $wiersz['id_pilkarz'].' kwota: '.$wiersz['kwota'];
     //   echo $transfer->getName($wiersz['id_pilkarz'], 'imie');
     // echo $transfer->getName($wiersz['id_pilkarz'], 'nazwisko');
-
+    
 
     ?>
     <div class="card mr-c transfer" style="width: 20rem;margin-bottom: 5px;" id="<?php echo $wiersz['id']?>">
