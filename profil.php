@@ -12,123 +12,108 @@
    document.title = "Profil | Transferypilkarskie.pl";
 
  </script>
+  <div class="row">
 
-   <div class="row">
-
-       <div class="col-md-3">
-         <div class="card" style="height:370px;">
-           <div class="card-body">
-         <div class="user-img">
-           <img src="https://i.imgur.com/2NcD6gE.png" alt="Awatar użytkownika" width="128" height="128">
-         </div>
-         <a href="#" class="badge badge-danger">Admin</a>
-         <a href="#" class="badge badge-success">Moderator</a>
-         <a href="#" class="badge badge-warning">Premium</a>
-         <p class="user-nick cien"><?php echo $user->dane($id_uzytkownika, 'nick');?></p>
-         <div class="list-group" id="list-tab" role="tablist">
-           <a class="list-group-item active" id="list-home-list" data-toggle="tab" href="#list-home" role="tab" aria-controls="home" style="margin-bottom: 5px;">Informacje o użytkowniku</a>
-           <a class="list-group-item active" id="list-profile-list" data-toggle="tab" href="#list-profile" role="tab" aria-controls="profile">Napisz wiadomość</a>
-       </div>
-        </div>
-      </div>
-       </div>
-
-       <div class="col-md-6">
-         <div class="card">
-           <div class="card-header text-center">
-               Informacje o użytkowniku
-           </div>
-         </div>
-             <div class="card-deck">
-               <div class="card" style="margin-top: 18px">
-               <div class="card-body">
-                 <div class="row">
-                  <div class="col-md-12 text-center">
-                    <span class="text-center">Ulubiona liga: Ekstraklasa </span>
-                  </div>
-                </div>
-              </div>
-             </div>
-           </div>
-
-            <div class="card-deck">
-             <div class="card" style="margin-top: 18px">
-             <div class="card-body">
-               <div class="row">
-                <div class="col-md-12 text-center">
-                  <span class="text-center">Ulubiony klub: Lechia Gdańsk</span>
-                </div>
-              </div>
-            </div>
-           </div>
-
-            </div>
-
-            <div class="card-deck">
-             <div class="card" style="margin-top: 18px">
-             <div class="card-body">
-               <div class="row">
-                <div class="col-md-12 text-center">
-                  <span class="text-center">Ulubiony zawodnik: Sławek Peszko</span>
-                </div>
-              </div>
-            </div>
-           </div>
-         </div>
-
-         <div class="card-deck">
-          <div class="card" style="margin-top: 18px">
+      <div class="col-md-3">
+        <div class="card" style="height:370px;">
           <div class="card-body">
-            <div class="row">
-             <div class="col-md-12 text-center">
-               <span class="text-center">Ranga: Debil</span>
-             </div>
-           </div>
-         </div>
+        <div class="user-img">
+          <img src="https://i.imgur.com/2NcD6gE.png" alt="Awatar użytkownika" width="128" height="128">
         </div>
-      </div>
-         </div>
-
-
-
-       <div class="col-md-3">
-         <div class="card" style="height:370px;">
-           <div class="card-header text-center">
-               Aktywność użytkownika
-           </div>
-           <div class="card-body">
-
-             <div class="row">
-               <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2196f3;">
-                 <span>Oddane głosy:</span>
-                 <h4 class="counter">500</h4>
-               </div>
-             </div>
-
-             <div class="row">
-               <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2196f3;">
-                 <span>Komentarze:</span>
-                 <h4 class="counter">500</h4>
-               </div>
-             </div>
-             <div class="row">
-               <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2196f3;">
-                 <span>Polubienia:</span>
-                 <h4 class="counter">13300</h4>
-               </div>
-             </div>
-             <div class="row">
-               <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2196f3;">
-                 <span>Rekomendacji:</span>
-                 <h4 class="counter">5</h4>
-               </div>
-             </div>
-
-        </div>
+        <a href="#" class="badge badge-danger">Admin</a>
+        <a href="#" class="badge badge-success">Moderator</a>
+        <a href="#" class="badge badge-warning">Premium</a>
+        <p class="user-nick cien"><?php echo $user->dane($id_uzytkownika, 'nick');?></p>
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item active" id="list-home-list" data-toggle="tab" href="#list-home" role="tab" aria-controls="home" style="margin-bottom: 5px;">Edytuj infromacje</a>
+          <a class="list-group-item active" id="list-profile-list" data-toggle="tab" href="#list-profile" role="tab" aria-controls="profile">Napisz wiadomość</a>
       </div>
        </div>
+     </div>
+      </div>
 
-   </div>
+      <div class="col-md-6">
+        <div class="card" style="height:370px;">
+          <div class="card-header text center" style="border-bottom:2px solid #2ecc71;">
+            Informacje o użytkowniku
+          </div>
+          <div class="card-body">
+
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <span>Ulubiona liga:</span>
+                <h4>Ekstraklasa</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <span>Ulubiona drużyna:</span>
+                <h4>Lechia Gdańsk</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <span>Ulubiony zawodnik:</span>
+                <h4>Sławek Peszko</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <span>Ranga:</span>
+                <h4>Debil</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="height:370px;">
+          <div class="card-header text-center" style="border-bottom:2px solid #2ecc71;">
+              Aktywność użytkownika
+          </div>
+          <div class="card-body">
+
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <span>Oddane głosy:</span>
+                <h4 class="counter">500</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <span>Komentarze:</span>
+                <h4 class="counter">500</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <!-- #2196f3 -->
+                <span>Polubienia:</span>
+                <h4 class="counter">13300</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
+                <span>Rekomendacje:</span>
+                <h4 class="counter">5</h4>
+              </div>
+            </div>
+
+       </div>
+     </div>
+      </div>
+
+  </div>
 
 
 
