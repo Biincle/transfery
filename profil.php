@@ -39,33 +39,7 @@
           </div>
           <div class="card-body">
 
-            <div class="row">
-              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
-                <span>Ulubiona liga:</span>
-                <h4>Ekstraklasa</h4>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
-                <span>Ulubiona drużyna:</span>
-                <h4>Lechia Gdańsk</h4>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
-                <span>Ulubiony zawodnik:</span>
-                <h4>Sławek Peszko</h4>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12" style="text-align:center;margin-top:5px;border-bottom:2px solid #2ecc71;">
-                <span>Ranga:</span>
-                <h4>Debil</h4>
-              </div>
-            </div>
+          
 
           </div>
         </div>
