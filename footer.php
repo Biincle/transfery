@@ -6,6 +6,7 @@
     <div class="footer-copyright">
         <div class="container-fluid">
             © <?php echo date("Y"); ?> Copyright: <a href="#"> Paweł Ciarka & Mateusz Pylak </a>
+            <a href="donate.php" class="btn btn-info btn-raised" style="float:right;margin-top:10px;">Donate</a>
 
         </div>
     </div>
